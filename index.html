@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style1.css">
+<header>
+    <img class="img1" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBISEhMWFhUXGBoYGBMYFRcVFxgXFxYWFh0VFRYYHyggGholHhgZIjEhJSkrLi4uFx8zODMtNygtLi0BCgoKDg0OGxAQGy0lHyUwLTUvLS0tMC0wLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOkA2AMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEDBAUHAgj/xAA/EAACAQIDBAYJAwIDCQAAAAABAgADEQQSIQUGMVETIjJBYXEUUlOBkZKhsdEHQsEVIyRy8BYzQ2KisuHi8f/EABsBAQACAwEBAAAAAAAAAAAAAAAFBgEDBAIH/8QAMBEAAgICAQMDAwMEAgMBAAAAAAECAwQRIQUSMRNBURQiMlJhcSORobFCgcHR4Qb/2gAMAwEAAhEDEQA/AOMTuPIgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAJngcMpcTGw+SsDzwIMciDIgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIBs939h1sZWFKkPFnPZRebfwO+eoxcvByZmZXi1983/APTrGxdw8DQALUxWfvep1hfwTgJ1xoilyUvK69k2vUH2r9ixiNtUF2imA9FpZWA69lsLqTbLa3dPLnFS7dHTVhXzxPqfUe/gv7a3EwNcEqgov3PT6o96cDPUqYvwc2L13Kpl22PuX7nJ94Nh1sHWNOqPFXHZdean+O6ck4uD0y6YeZXk198H/wC0ayeTqEGRAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBABgHdtzNiLhMIiW67APUPeWIvb3DSd9MO2J856vmyyb3p/avBFf1K3krrWXB0GK3UF2BszF+yoPcLfeabrOdEz0Hp9XpevZz8f9ERqbtVxjUwjuoqsAc1yQCVLWJ430mntaeieWZV9O7or7UTvcfZW0cPXqJiHPQqvVGbOrMTplJ1FgDceU6KYSjLkrXWMrDuoUql9zf8AGjc74bHXFYV0t11Bame8MBe3v4TddX3R2R3SMx496e+H5OGiRx9EWxBkQBAEAQBAEAQBAEAQBAEAQBAEAQBALuGw71HCIpZm0CgXJMyeJzjCPdJ6Ru8buXtClTNR6BygXOVlYgcyoN57dcktnDV1bEtn2RnyanZaBq9FTwNRAfIuLzwvKOy56rk18P8A0fRJkmj5TP8AIgH6ibpVsRUGJw4zOFCvTvYnLwZTz7reE5r6ZN7iWnonVa6a/Qt4XsyDDa+KoY1K+IBatTsCKmhIAIF7eB4zn7mmWV0U20OFf4v4Ol7sb5UcYcmU06oF8hNwwHEoe+3Kd1Vynw/JTeo9GsxV3p7iSHPOnXBExXO0cB2ogWvWA4Co4HkHa0h5fkfUKX/Tj/C/0bLCbp46ogqLR6pFxdlUkcwpN5sjj2S5SOS3qeNXLslLk1GIoOjFHUqw0KnQiamnF6Z3QlGSUovaZbmDIgyIAgCAIAgCAIAgCAIAgCAIAgE4/SQU/TKma2fojkv/AJlzW8bfS83U67uSA/8A0Xf9Mu3xvn/wdbM7WUSvfetHz3tpkXF1jRPVFVihHDRri3heRzemz6jjqUqIqfnXJ3XZW0VxFCnWXg6g+R7x7jeSNT3FM+b5mPKi+VcvZkW27v0MNjTQamWpqq5mGjBjrdQeK2IHxmmV/bPXsTeH0P6jFVilqT/sRPaO3sNU2qmJN2o2F7pc6IRYqePGaJTi7Nk/jYd1WF6Kf3FjdGn0u1VqUUK01d6lvUp2ayn4ge+eqVu3gx1KXp4LjY9vSX8s6dtTHrQo1KrcEUnzPcPeZJWS7YtlNxMd3XRrXycW2W6nE0jV7JqAsTw1a5v4XkRBpzWz6FepRpkoedcHaWeT8EtcHzyS3J9xzX9SCnpKW7XR9b5jlv42/iRWd2qfBceh9/oPfjfBE5xk17iYAgCAIAgCAIAgCAIAgwIM8lUQsQFBJPAAXJ8gIPLaS2+Df4TcvaNQAjDsBzYhfubz2q5s4LOq4kOHNFcVuRtFBc0C3+Uq0y6pfB5h1fDlwpo01N6tCoCM1OohvwKsp8jPHJ3SVdsNPTTNzjt9toVaZptVspFiVUKxHIsJ6dkmtM4quk4tc++MOSPTz7EiSvcjew4Q9FVuaDG+mpRvWA7xzE3U2uL5Ifq3S45a7ofkv8nR8XhcJjKYZlSqn7XGtvJhqJ3uFdq2VOu3Kwp9q2iDYjc4DaCotF/RdLtmOnVN+tx42nK8Z+prXBZa+rqWI5yku/4JpQoYbCUjlCUkGpPC/mTqZ3RhXUiuynk5s13bZznfHeg4pujp3FFT73PM8hyEjsi9zl2rwWvpfTFjR7pfk/8ABGJzEvwbrC704ynTFNamgFhcAkDkCZvhkWRWkzhs6bjzl3Sjyaqo9Sq5JzO7HzYma/um/wBzqSjXHS4SNjR3bxbC/REeZAm5YlrXCOaXUMdPXceK+7+KQXNInyIaZliWrlxMwzqJPSka1lINiCCOIOh+E5mmuGdae1tFJjkzwxBgQZEAQBAEAQBBg2m7uwq2MrClTFhxdz2UXmeZ5DvnqEXJ6Ry5uZXi1983/wBfJ2fd/drDYNbUkGf91U6uff3DwE7oVRiUDN6pfly5el8FnfTa/o+DrMlVUrADICVLE51BsrcdL90xbPS4NvScJ35C9SLcfc1H6fbytXo1Bia6Gr0llUlEbJkXgotcXvPFNm/yO3rXS1TOLx62lrnXyb3bexcPi0y1kBPc40dfENx93CbpVRkRmJn5GJP7X/0cd3o3eqYKrlbrI3YqesOR5MOU4bK3B6L5gZ9eXX3R8+6NNNZ3iZGzM2ZicSjf4dqgbkhb6gfzPUHLf2mi+FMo/wBXWv3JEdobdy8K1ufRJf45bzo3ka9yK9Dpe/8Aj/dkd2niMQ7f4hqhbk5b6A6TRNy/5ErRCqMf6SWv2MOa/Hg3+EID5NjsTZD4mplGijtP3AchzM6MfHd0tI5MvLjjw2+X7HQdn7Oo4dbU1A5txY+Zk/RjQrWkiq35dt8tyfHwYG8+0zSok03C1LrYaE2vr1TNWXf6df2Pk6unYvq2r1I7iWN3dqmpSHSVFNTM2l1Bt3dUTODkqcPvlybM/D9Oz+nHgyNpbMpVxZxr3OO0Pf3zovxK7o/uasfKsofHj4INtPZ70Hytw/a3cRzlcyMeVMtMsuPfG6G0Yk0G8TAEAQBAEAQBAO57j7EGEwiAj+4/XqHvzHgvkBYTvphqJ8761mu/Ia/4rhFvfvbzYTC5qf8AvHbIh5aElvcB9RMXS7UZ6Lgxysj7/CWzkibMxFejXxjHMtO2Z2NyxJUWW/HjOPtclsvDvqqnGhcN+NF/Y262IxVF6tHKcjZchNmJyhri+nfPUa5TXBryeo049ihY/J0P9PsPiUwzekF75yFpve6BdDx11P2E7caLS2yq9dspnbFVa/le5st5dmLisNUpHja6Hk41B8u4+Bm62rvicfTct416l7PycQZSCQRYjQjxGlpE+GfRE00jfbqbuNi2LMStJT1mHFj6q/ye6b8fHdj58Ed1DqCxYccyfg6bgsHSoKEpIEA5DU+Z4kyYrqjBfainXZNtz7py2XWYzatPg1KtvnRg7QwtKspWqgYePEeR4iYnTCa00dNGRbS+6DOb7zbBOGa63ak3A94Pqt+ZDZOM6n+xbsDOjkw54kvJpACdBxnLy2SDeuWdM2PgxQoLTHG12PNjx/HulnxaFVWvkp2bdK+1y9vYwN6tqtRpgIbM5tfkBxPnwmjqN7qgor3OrpeLG2blJcIhhwVQ0mrns3tcm5JJt8JCuqcoOx+Cwq2EZqpeS/hdi1alLpaYB1ItezacptqxbZw74nizLrrn2TJVu6lVaA6QsSSSA3FRwtrr/wDZN9PjNV/eQnUHCVv2Fdu4LpqLD9y9ZT4ju94mc6lWVvXlGcG112fsyBysNa4LGhMGRAEAQBAEAzdi0Q+JoKeBqIP+oTMfJz5Uu2mbXwz6CJkqkfLn5Ip+omx3xWFHRi702zhe9hYhgPG1j7poyK3KPBOdBy44+Q1Pw1o5fh9tV6WHr4TTJU7SkEMrAg3HLs8DOPuaXaXOWNVZZG73RItwt6MPhaT0q2dS1TOHC5lAyqtjbUcOU349sYcMies9LtypRnXrheDotHFJUUOjBlPBgbgySg1JbRUbKZ1y7JrTDPNmuDCRxneejlxtdVH/ABNB4tY/cyFujqbSPoeDPeLBv4Oo7Mwi0KNOkP2ixPNu8+83k1RV2QSRSsy533ubIjvjvO6u2HosVI0dxxuRfKp7rc5w5eS1LsgT3SumQ7fWsW9+EQvp3vmztm9bMb/GR/fJc7LB6cNa7Vr+CXbq7yOzChWOa+iOeN7dlj3+ck8LLfd2SIPqXToqPq1rWvKJFtOgtak9Nv3C3ke4/GSt9SnBkPiWOq1SRznYtO+JpKfX1HiP/Ilexof14r9y3ZM9USkvg6KzS2JFQ17mg3rwDVaasguUJ07yDa9vgJGdTolZFSj7Et0y6NcnGT8kWGPfoTQ/ZcHxBBvpIT1pKv034Jz0Yep6i8m53d2zRp0xTe4OYnNa66+Wokj0/Nrqh2SI/Nw52z74kmVwQCCCD3jW8m4zUluPgh3XKL1LyLzL5TR6S52c8xyZatQcmP3lQuWptFoqe4IsTUbBAEAQBAEAydmYjo61Kp6rqT5BgT9JlPk03w765R+Uzv8A0oIuOB1+Ml48o+YTh2ycX7GJj9oUqK56rhFuFzE2FzoP9eBiclBcm/HxrL5NVrbI5v5gaD4OtW6NDUCqVqADNq6i+YcRY+U031x7Nomej3XxyI1yb18EB2fsIVcFXxIezUmIyngVCqePcdZxxq7odxZrsv08iNWvJuf00xrirVo3OQpnt3BgwFxyuG+k6MGTctEd1+iMq1Z7pk+Z5LaKpGO2cmxNcVdpZ+INdfgHA/iQbfddv9y+1VuvDUfiJ09qmssKXBSUudHINqMTXqk+u3/cZWrPzZfsdaqjr4RizWbvPkv4BiKtMj11+4m2nixGq/mt7+GdNZtZbtcaKYlyc+SqExubuFU/ViP5lYjLsyd/DLbKHfj9vyieEy0rlFWa5LGIxSJbOwW5sCeF5rsthD8n5N1VE5/ivBp96cLT6EvkGe69a2up+sjeo1Q9FziuSS6fZZ6qg3waBdmg4Xpw2oYgr4XA08dZFrH/AKDtTJN3/wBb02bTc+u39xD2RZh4Ekg2kh0qyT3F+Dj6jBcS9yRFrayYk+3bIyMds57iqmZ3bmxP1lQtl3TbLLBaikWprPYgCAIAgCAIHk6vuBt4V8OKLn+5SFvFkHZbzHA+UksWza7WUrreA6rXbHw/9nvffYdXF00FNwChJ6M6BiQBfN3ED7me8mmU1weej5teLJqa8+5zzF0cfQpNRqCqtI6FTcpa4PHUDW04JRsj9rXBaq5410lZDTfz7ljAUMVVQ0qQdkLXKr2c1gLseF7WmIxnLiJttnRW++zSZPt0tgnCozOQaj2BtwVRrlv368fdJXExnWu5+SrdUz1ktRj+K/yet7NsihQax/uOMqjlzb3fe095d3pw17s89Lw3dapSX2o51sdCcRRsCeup56BhrIihN2LRbciSVUt/B1Vqks6XBRkuTmuN2NiTUqEUmILMQdOBJ8ZXrMS5yeolwpzKFBJyXsWP6LivZN9PzPP0d/6Tb9bR+pF3C7HxIqITSawYE8OAI8Z7rxLlJNxPFmXS4tdyJ4TLP7FX1yc52opFarcW67fUmVLI7lY+C30vda/gl+wNo9NSAJ66gBvHk3vk/gZKsrS90QWbjOuxyXhmPvHsupWylD2b9Q6Xv3g85rz8WdvMfY3YORCriXv7kaxIxCJkfOE00NyunCxkNYroR7Z70S1fpTl3R1sphqFeooRAxW/D9oPeeUxXXbYlGPgzOdcG5PySvYmzegQ3N2biRw04KP8AXfJ7CxvQj93lkTlXq2XHhFjePH9HTKA9Z9PJe8/xNefkdkO1eWbMOhyl3PwRCV0mBAEAQBAEAQBAL+BxlSjUWpTYq6nQj7HmDynqMnF7RrtqhbDsmuGdG2LvvQqgLWIpPzPYPk3d5GSdOZGS+/hlUzOiWVvdXK/ybTbOHGJw1SkrjrgWbtDRg19PKdNkVbDSZyYkp4tynOL49jA3d2WcJSdGdWu+a/ZA6oHf5TGPSqV9zOjPyXmSThF8GLtje2hSBFM9I/JdVH+Zv4Exfmwh+PLNmJ0i2xp2LSIBj8bUr1DUqG7H4AdyqO4SInOVkty8lpqqhTBRgvBP9hbNTD0gABnYAs3eSe6/ISfxMWNcE/cq2dlTusfPHsZzPO9ROJRLZaekj2keSYPWil4PWjzeN6Paia7bOz1rUzp1gLq3eDy8pxZmOrINpcndiZEq5LnghOFxL0nDobEfXmDzErlVsqpd0SfnXGyOn7ks2ft+lUsHORuR4HyP5k9j9RhNak9Mh78CUXuPKMnamF6ekUVgLkG/Hgb903ZMFfV2xZ5ol6U+5o87LwvQUsjMDqTfgNfOecatY9epNHq6TuntJmHtDeCmgIpnO3h2R7+/3TRf1CEI6r8m6rDlJ7mRWvWZ2LMbk8T/AB5SDnZKctslIxUVpHiaz0IAgCAIAgCAIAgCOAvg906rL2WZfIkfaek5ezPLrT8pM9GpUcgFmYnQC5a/haZTlI8qMIrekjJxGxsTTXM1JgvPQ28wOE2yxrIruaNUcqmb7VJbMOl2l8x95pjzJbN8vxejqGaXGC+1FKa3JnkmewkUJmD0kjyTB70araG3aVKoKZ19Yj9v5PhOC/PhVPs/uSFOBKyHd/Y2KuCAQbg6g+E7YS7luJzSg4vTKExLej1FJSWjnNXtHzP3lOnxJlnh4Mmjsyu65lpkjnoL+V+M2xxbZLaR4d0IvWzHDMptdlI4i5FvdPDlOL1tnvUWUdyeJJ8yT95hyk/ybMqK+DzPGwIMiAIAgCAIAgCAIAgCZAmDGiRbkhemcntBer8bEiSXTYxdnJF9WlL0VrwTJmvpLBKK1yVyCaaa8nNMUqiuwXsiobeWaVSxL1ml42XGvbqTl50dGEtkfBUpL7ihMyz0l7EPxW1cTRxJZ+HDJ+0p3ZfzK/ZlXVX90iwQxqbaFGP9/wBzN2rvEvRgUTdmGp9T/wBp05PUV2ah5Zox8BqW5+xgbB2Oah6Wp2OIHrnn5fec2Fhux98/H+zpyspVrtj5/wBErk+lpaRDvl7ZQmYl4PcVyQGgAayhuBfXyzSpw07lvxssEvw4+CeXlrjpLghJeeSK71BelUjiV1+Ol/dIHqcYqxa8kribUeTSyMOsTIEwBAEAQBAEAQBAEAQBAEcGOfYuYeuyMGQlWHAie4TcHteTE4Ka7ZLg2WI3jxLrlzKL6Eqtiff3e6ddnUL5x7Tjh0+iEu7Rq6faHmPvOSP5L5OyS4f8HSry4x8FSkuShMyZSMHamASumVtCOy3eD+PCcuVjK+On5OrHudMuPBodmbvN0h6YdVTw9fy/5f8AXORWN06Xf9/hf5JS/Nj2Ls8sk400HCTiSS0iJe2+ReZPSRQmYl4ZsiuTnlTtHzP3lPk+Xon1rtNhQ25XVctweRIuR7/zOyGfbGPajRLGrk9swK1VnYsxuTxJnJOcpy3LybopJaR4ng9CAIAgCAIAgCAIAgCAIAgCAIAgCZT09mCebI2gtamCO0BZh3g8/KWjEyFbX+5XsnHddm9cGYTOtnPFcFLwe1EpeYPSiUJg96PJMwekl7mFtXHLSpkntEWUczz8pyZeQq620+Tpoq7mQkmVl8kt7CYMiAIAgCAIAgCAIAgCAIAgCAIAgCAIAgHqnUZTdSQeYJBnqMpRe0zzJKXDRm/1nE+1b6fidP1t68SNP0tP6Sn9ZxPtT8B+I+uv/UPpav0j+s4n2p+A/EfW3/qM/TVfA/rGJ9qfgPxH1t/6jP09XwUO18R7Vvp+Jj62/wDUPQr+DEqVGY3YknmTc/Wc8pyk9s2pJeDzPJkQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEApmHONoDMOcbQGYc42gMw5xtAZhzjaAzDnG0BmHOY2gMw5zO0BmHONoDMOcbQGYc42gMw5xtAZhzjaAzDnG0BmHONoDMOcbQGYc42gMw5xtAZhzjaAzDnMbQGYc5naAzDnG0BmHONoDMOcbQGYc42gMw5xtAZhzjaB9peiUvZp8o/E4D0PRKXs0+UfiAPRKXs0+UfiAPRKXs0+UfiAPRKXs0+UfiAUOFpeonyiZBYwxoVC4VF6jlDdVGoAOnhqIBTE1MLTvnFNbIznqjsJbM3DuuIBfWhROoROfZHCAeK64dEZ2VAqgsxyjRQLk8IB7XD0T+xOfZEAsocOajUgi5lVWPVW1mLAWPPqmAXzhaXqJ8qwB6NR9RPlWAPRaXs0+UQDHq1cKtVaLdGKjKWCWFyq8W4aDxMAwxtbAlM4AYXAAWhUZyWBZStNULMpAJDAEEA6wC+2NwQZ1JphqaCo4KgFEPAuCOr5HXwgFn+rYCynqjMSLGkwK5SoPSKVvTALLq9h1hzEAo21sGGKdFUzAE5fQ8RcgMFuo6LrC5GovAPWH2ngnyZVvmBIPo9QBQrMpNQlLUxdGHXtwgGRs+vha4JpKpta96ZU6i4NmAJUjUNwPdAMv0Sl7NPlH4mAPRKXs0+UfiAPRKXs0+UfiAPRKXs0+UfiAPRKXs0+UfiAX5kCAIAgCAarePZ7V6ORVRmuCA7EKCP3GytmtxykWPhxgGnxm6rsajg0g7tUJexGYNTphVaw4ZkBtrbuvALeJ3VqVekaotDNVXEqTq2TpwmUoSl2ylT6vauOUArU3WqM7tlpKWplRlqOBSPRGn0aoEAZLkm5tx7JOsAu43dbN0qU0ooj4dqV7ZjmK2XqZeoobrXB15X1gFnFbrVnz26Klm1FRCxdB0Ip+jqMq3pX1vcceyDrAMmju/VFanXC0aeTIOgQsaRsalz2B1hnDKcuhFu+8A97T2FWqvWa1IGrSC5yWL0mCsClPqjMjE6m6njxuLAYZ3Sd2LMtFbh8tJblKRd6BtTOUaEU2ubDV+EA3eztkBKRpMbKKz1ECMyBVNU1FTS2g0BXhxHCANo4Sq9eiypSNNcwctUZXIYFSAopkEAG+rDieHGAaz/ZplpEKFdy4y561VeiRUemgpuAWJUMdDa+ZtRAPWO2Liahy3p5ehVOmLtnaohRw70glrFkAIz8PhAMTHbs4mq71CaQeoSSuZ8tI2oqHQhR0pAoi6sFBJgG8fAVv8Q4ZRVqWVGubJTGg7uOrN5m1++AYuI2ETVpdGqLTRUVnzvnZEDDoTTAyspzHUnS50gGVsDZHo4cklmcj9zNlRBlSmpbUgD6kwDbQBAEAQBAEAQBAEAQDzAKwAIBSAVEAQAIBQwAIBWAIAgCAIAgFIBUQCsAQBAEAQD//2Q==" alt="expense tracker logo"><h1>Expense Tracker</h1>
+    <div class="header-buttons">
+        <button id="homeButton">Home</button>
+            <button class="reset">Reset</button>
+            
+        </div>
+        <button id="login">Login</button>
+    </div>
+</header>
+    <section class="dashboard">
+        <div class="summary-cards">
+            <div class="card total-income">
+                <h3>Total Income</h3>
+                <p id="total-income">₹0</p>
+            </div>
+            <div class="card total-expense">
+                <h3>Total Expenses</h3>
+                <p id="total-expenses">₹0</p>
+            </div>
+            <div class="card balance">
+                <h3>Balance</h3>
+                <p id="balance">₹0</p>
+            </div>
+        </div>
+      <div class="container1">
+        <div class="container2">
+        <div class="charts">
+            <div class="pie-chart">
+                <canvas id="expensePieChart"></canvas>
+            </div>
+            <div class="bar-chart">
+                <canvas id="expenseBarChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+        <div class="expense-form">
+            <h3 style="font-size: 30px;">Add New Transaction</h3>
+            <div class="conatiner3">
+        <form id="expense-form">
+                <label for="transaction-type">Type</label>
+                <select id="transaction-type" required>
+                    <option value="expense">Expense</option>
+                    <option value="income">Income</option>
+                </select>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" required>
+                        <option value="food">Food</option>
+                        <option value="rent">Rent</option>
+                        <option value="transportation">Transportation</option>
+                    </select>
+                </div>
+            </div>
+    
+            <label for="title">Description</label>
+            <input type="text" id="title" placeholder="Transaction Description" required>
+    
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" required>
+    
+            <button type="submit">Add Transaction</button>  
+        
+        </form>
+       </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="transaction-list">
+        <h1>Recent Transactions</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Edit/Delete</th>
+                </tr>
+            </thead>
+            <tbody id="transaction-list"></tbody>
+        </table>
+    </section>
+
+    
+    <footer>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Track expenses effortlessly for precise and easy financial management.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#" id="Food">Food</a></li>
+                <li><a href="#" id="Rent">Rent</a></li>
+                <li><a href="#" id="Trs">Transportation</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: <a href="mailto:contact@expensetracker.com">contact@expensetracker.com</a></li>
+                <li>Phone: +123-456-7890</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-media-icons">
+                <a href="#" aria-label="Facebook">
+                    <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook Icon" width="24"
+                        height="24">
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="Twitter Icon" width="24"
+                        height="24">
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" alt="Instagram Icon"
+                        width="24" height="24">
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="YouTube Icon" width="24"
+                        height="24">
+                </a>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Load Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script1.js"></script>
+     </body>
+</html>

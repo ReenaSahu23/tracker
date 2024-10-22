@@ -1,0 +1,536 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+    font-family: Poppins, sans-serif;
+   background-color: #F8F9F9;
+    color: #1B3A4B;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #001f3f; /* Dark Blue */
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    flex-wrap: wrap; /* To handle smaller screens */
+}
+
+.img1 {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 34px;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Header Buttons and Dropdown */
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Maintain gap between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: flex-start; /* Align items to the left (or adjust as needed) */
+}
+
+button {
+    background-color: white; /* Yellow */
+    color: #001f3f; /* Dark Blue */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(173 213 244 / 100%);
+}
+
+.reset{
+    margin-right:15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 10%);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: #001f3f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Login Button */
+#login {
+    background-color: white; /* Red */
+    color: #001f3f;
+    margin-top: 5px;
+}
+
+#login:hover {
+    background-color: rgb(173 213 244 / 100%);
+}
+
+/* Dashboard */
+.dashboard {
+    padding: 20px;
+}
+
+button[type="submit"] {
+    background-color: #1B3A4B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(65 165 240 / 100%);
+}
+.summary-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Flex wrap for smaller screens */
+}
+
+.card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+    text-align: center;
+    min-width: 200px;
+}
+
+.total-income {
+    background-color: #e0f7fa;
+}
+
+.total-expense {
+    background-color: #ffebee;
+}
+
+.balance {
+    background-color: #ffe0b2;
+}
+
+/* Charts */
+
+.charts {
+    display: flex;
+    flex-direction: column; /* Stack charts vertically */
+    align-items: center; /* Center align charts */
+    gap: 20px; /* Space between charts */
+    margin-bottom: 30px;
+    width: 100%; /* Ensure charts don't overflow */
+    max-width: 100%; /* Prevent horizontal scrolling */
+    overflow: hidden; /* Hide overflow if any */
+}
+
+
+.container2 {
+    width: 100%; /* Prevent horizontal overflow */
+    margin: 0 auto; /* Center align container */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+/* Expense Form */
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(199 232 252 / 100%);
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.expense-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.expense-form .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.expense-form select,
+.expense-form input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.expense-form label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Transaction List */
+.transaction-list {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #013551;
+    text-align: left;
+    font-size: 18px;
+    word-break: break-word;
+}
+
+td{
+    word-wrap: break-word;
+    word-break: break-all;
+    max-width: 300px;
+}
+
+td .edit, td .delete {
+    color: #E74C3C;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #FFDC00;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #FFDC00;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .charts {
+        width: 100%;
+    }
+
+    .summary-cards {
+        flex-direction: column; /* Stack cards vertically on small screens */
+    }
+
+    .container2 {
+        flex-direction: column; /* Stack charts vertically */
+        align-items: stretch; /* Take full width */
+    }
+    
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically on small screens */
+        align-items: flex-start; /* Align everything to the left */
+    }
+
+    .header-buttons {
+        display:flex ;
+        flex-direction: row;        /* Ensure items are in a row */
+
+        align-items: center;
+        justify-content: flex-start; /* Align buttons to the left */
+        gap: 10px;
+    }
+
+    button {
+        margin-right: 0;
+        margin-left: 0; /* Remove excess margins on small screens */
+        margin-top: 10px;
+
+    }
+
+
+
+    .summary-cards {
+        flex-direction: column; /* Stack cards vertically */
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+
+    .charts {
+        width: 100%;
+    }
+
+    .container2 {
+        flex-direction: column; /* Stack charts vertically */
+        align-items: stretch; /* Take full width */
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Adjust base font size for mobile */
+    }
+
+    header {
+        flex-direction: column; /* Stack header elements vertically on small screens */
+        align-items: flex-start; /* Align everything to the left */
+    }
+
+    .header-buttons {
+        display:flex ;
+        flex-direction: row;        /* Ensure items are in a row */
+
+        align-items: center;
+        justify-content: flex-start; /* Align buttons to the left */
+        gap: 10px;
+    }
+
+    button {
+        margin-right: 0;
+        margin-left: 0; /* Remove excess margins on small screens */
+    }
+
+
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .charts {
+        width: 100%; /* Ensure full width on very small screens */
+    }
+
+    canvas {
+        width: 100%; /* Ensure charts resize properly */
+    }
+}
+
+   @media (min-width: 1024px) {
+    header {
+        display: flex; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .header-buttons {
+        justify-content: center;
+        margin-top: 10px;
+        gap: 15px; /* Adjust gap if needed */
+    }
+
+    .summary-cards {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        flex-wrap: wrap; /* Flex wrap for smaller screens */
+    }
+    
+    .card {
+        margin: 10px 0; /* Maintain margin */
+        width: 40px; /* Adjust width for better responsiveness */
+        
+    }
+    
+    .card {
+        flex: 1;
+        margin: 10px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        min-width: 200px;
+    }
+
+    
+            .container2{
+                display: flex; /* Use Flexbox to align items in a row */
+                justify-content: space-between; /* Space out the cards evenly */
+                margin: 10px 0;
+                background-color: #edf6f5;
+                width: 100%;
+                margin-right: 10px;
+                
+            }
+            .container1{
+                display: flex; /* Use Flexbox to align items in a row */
+                margin: 10px;    
+            }
+            
+    
+
+            footer {
+                background-color: #001f3f; /* Dark blue background */
+                color: white; /* White text color for better contrast */
+                padding: 20px;
+                text-align: left;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            
+            .footer-section {
+                width: 250px; /* Width of each footer section */
+                margin-bottom: 20px;
+            }
+            
+            .footer-section h3 {
+                color: #FFDC00; /* Bright color for headings */
+                margin-bottom: 15px;
+            }
+            
+            .footer-section p, .footer-section ul, .footer-section li {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+            
+            .footer-section a {
+                color: #FFDC00; /* Yellow color for links */
+                text-decoration: none;
+            }
+            
+            .footer-section a:hover {
+                text-decoration: underline;
+            }
+            
+            .social-media-icons img {
+                margin-right: 10px;
+            }
+            
+            footer ul {
+                list-style: none;
+                padding: 0;
+            }
+            
+            footer ul li {
+                margin-bottom: 10px;
+            }
+            
+            footer ul li a {
+                color: #FFDC00; /* Link color */
+                text-decoration: none;
+            }
+            
+            
+            
+            @media (max-width: 768px) {
+                footer {
+                    flex-direction: column; /* Stack sections on smaller screens */
+                    text-align: center;
+                }
+            
+                .footer-section {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            
+}
+
